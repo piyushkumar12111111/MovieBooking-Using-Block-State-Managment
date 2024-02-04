@@ -14,6 +14,7 @@ class HomePage extends StatelessWidget {
     final totalMoviesCount = context.watch<MoviesCubit>().totalMoviesCount;
     return Scaffold(
       appBar: CustomAppBar(
+        height: MediaQuery.of(context).size.height * 0.1,
         subTitle: totalMoviesCount != null
             ? "Mumbai | $totalMoviesCount  Movies"
             : '',
