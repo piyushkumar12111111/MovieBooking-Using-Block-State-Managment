@@ -1,4 +1,5 @@
 import 'package:book_my_movie/features/book_movies_ticket/presentation/pages/home_page.dart';
+import 'package:book_my_movie/features/book_movies_ticket/presentation/pages/profile.dart';
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -91,5 +92,5 @@ final List<Widget> _widgetOptions = <Widget>[
   HomePage(),
   Text('Music', style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold)),
   Text('Search', style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold)),
-  Text('Settings', style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold)),
+  ProfileScreen(),
 ];
