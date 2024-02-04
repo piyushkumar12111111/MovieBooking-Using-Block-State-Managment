@@ -59,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         buildTabItem(icon: Icons.home, index: 0),
                         buildTabItem(icon: Icons.music_note, index: 1),
                         buildTabItem(icon: Icons.search, index: 2),
-                        buildTabItem(icon: Icons.settings, index: 3),
+                        buildTabItem(icon: Icons.person, index: 3),
                       ],
                     ),
                   ),
