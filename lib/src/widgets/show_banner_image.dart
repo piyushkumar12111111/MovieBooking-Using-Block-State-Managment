@@ -15,12 +15,13 @@ class ShowBannerImage extends StatelessWidget {
     return ClipRRect(
       borderRadius: BorderRadius.circular(8.0),
       child: CachedNetworkImage(
+         
         cacheKey: imagePath,
         imageUrl: 'https://image.tmdb.org/t/p/original$imagePath',
         fit: BoxFit.cover,
         width: double.infinity,
         progressIndicatorBuilder: (context, url, downloadProgress) {
-          return Shimmer.fromColors(
+          return Shimmer.fromColors(  //! shimmer effect
             baseColor: Colors.grey,
             highlightColor: Colors.white,
             child: Container(
