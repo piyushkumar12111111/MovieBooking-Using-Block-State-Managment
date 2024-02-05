@@ -42,8 +42,21 @@ class _MyHomePageState extends State<MyHomePage> {
                   elevation: 0,
                   child: Container(
                     height: 60,
+
+//  decoration: BoxDecoration(
+//         gradient: LinearGradient(
+//           begin: Alignment.centerLeft,
+//           end: Alignment.centerRight,
+//           colors: [Colors.deepPurple, Colors.redAccent],
+//         ),
+//       ),
+
                     decoration: BoxDecoration(
-                      color: Colors.white70,
+                      gradient: LinearGradient(
+                        begin: Alignment.centerLeft,
+                        end: Alignment.centerRight,
+                        colors: [Colors.deepPurple, Colors.redAccent],
+                      ),
                       borderRadius: BorderRadius.circular(25),
                       boxShadow: [
                         BoxShadow(

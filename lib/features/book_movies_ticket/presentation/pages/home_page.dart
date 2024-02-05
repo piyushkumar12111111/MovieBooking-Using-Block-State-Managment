@@ -1,4 +1,5 @@
 import 'package:book_my_movie/features/book_movies_ticket/presentation/movies_cubit/movies_cubit.dart';
+import 'package:book_my_movie/features/book_movies_ticket/presentation/widgets/moviebar.dart';
 import 'package:book_my_movie/features/book_movies_ticket/presentation/widgets/movies_list_widget.dart';
 import 'package:book_my_movie/src/pages/error_screen.dart';
 import 'package:book_my_movie/src/pages/loading_screen.dart';
@@ -19,6 +20,12 @@ class HomePage extends StatelessWidget {
       //       ? "Mumbai | $totalMoviesCount  Movies"
       //       : '',
       // ),
+      appBar: MovieAppBar(
+        title: 'Top Movies',
+        height: MediaQuery.of(context).size.height *
+            0.15, // Custom AppBar height if you want it to be taller
+      ),
+      backgroundColor: Colors.black,
       body: BlocBuilder<MoviesCubit, MoviesState>(
         builder: (context, state) {
           if (state is MoviesLoadingState) {
