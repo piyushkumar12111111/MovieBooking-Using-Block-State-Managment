@@ -1,7 +1,7 @@
 ## Book My Movie Flutter Project 
 
 
-## Overview of Project
+## Overview of  Project
 
 **book_my_movie** is a Flutter project designed to provide a seamless movie browsing and booking experience. The project follows the Clean Architecture pattern and utilizes Flutter Cubit for state management. Dependency injection is handled using GetIt. Below is the documentation outlining the project structure, dependencies, and other important details.
 
