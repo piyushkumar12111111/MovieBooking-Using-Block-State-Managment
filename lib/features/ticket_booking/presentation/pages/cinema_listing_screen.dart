@@ -70,7 +70,7 @@ class CinemaListingWidget extends StatelessWidget {
             ),
           ),
           const Divider(),
-          const SizedBox(height: 16.0),
+          const SizedBox(height: 16),
           Expanded(child: BlocBuilder<CinemaListingCubit, CinemaListingState>(
             builder: (context, state) {
               if (state is CinemaListingLoadingState) {
