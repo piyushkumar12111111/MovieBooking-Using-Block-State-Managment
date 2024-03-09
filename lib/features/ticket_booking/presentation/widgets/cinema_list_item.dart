@@ -57,7 +57,7 @@ class CinemaListItem extends StatelessWidget {
               ),
             ],
           ),
-          const SizedBox(height: 10.0),
+          const SizedBox(height: 10),
           Text(
             (cinema.nonCancellable ?? false)
                 ? "Non-cancellable"
