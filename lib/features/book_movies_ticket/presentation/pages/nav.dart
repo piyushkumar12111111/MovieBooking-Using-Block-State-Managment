@@ -32,7 +32,7 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Padding(
               padding: const EdgeInsets.only(
                 left: 10,
-                right: 10,
+                right: 9,
                 bottom: 20,
               ),
               child: ClipRRect(
