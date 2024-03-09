@@ -23,6 +23,7 @@ class MoviesImagesErrorState extends MovieImagesState {
 class MoviesImagesLoadedState extends MovieImagesState {
   MoviesImagesLoadedState(this.images);
   final List<Backdrop>? images;
+  
   @override
   List<Object?> get props => [images];
 }
