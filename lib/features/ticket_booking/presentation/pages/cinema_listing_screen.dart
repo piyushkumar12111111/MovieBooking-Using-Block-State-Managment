@@ -60,7 +60,7 @@ class CinemaListingWidget extends StatelessWidget {
           ),
           const SizedBox(height: 4.0),
           Padding(
-            padding: const EdgeInsets.all(12.0),
+            padding: const EdgeInsets.all(12),
             child: Text(
               '• $languages',
               style: const TextStyle(
