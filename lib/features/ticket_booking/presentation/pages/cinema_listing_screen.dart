@@ -28,7 +28,7 @@ class CinemaListingScreen extends StatelessWidget {
       ),
       child: CinemaListingWidget(
         languages: languages,
-        movieName: movieName,
+        movieName: movieName ,
       ),
     );
   }
