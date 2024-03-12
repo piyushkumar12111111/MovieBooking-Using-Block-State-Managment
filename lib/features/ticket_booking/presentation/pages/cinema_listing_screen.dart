@@ -58,7 +58,7 @@ class CinemaListingWidget extends StatelessWidget {
               _seletedDate = p0;
             },
           ),
-          const SizedBox(height: 4.0),
+          const SizedBox(height: 4),
           Padding(
             padding: const EdgeInsets.all(12.0),
             child: Text(
