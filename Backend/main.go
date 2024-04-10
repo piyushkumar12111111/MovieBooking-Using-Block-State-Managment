@@ -6,7 +6,7 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	handler "github.com/piyushkumar/Hotelbooking/Handler"
+    "github.com/piyushkumar/Hotelbooking/Handler"
 )
 
 func main() {
@@ -26,3 +26,5 @@ func main() {
 
 	log.Fatal(http.ListenAndServe(":8080", r))
 }
+
+//! http://localhost:8080/api/v1/musics

@@ -2,6 +2,8 @@ import 'package:book_my_movie/features/book_movies_ticket/presentation/pages/hom
 import 'package:book_my_movie/features/book_movies_ticket/presentation/pages/profile.dart';
 import 'package:flutter/material.dart';
 
+import '../music/musicplayer.dart';
+
 class MyHomePage extends StatefulWidget {
   @override
   _MyHomePageState createState() => _MyHomePageState();
@@ -103,7 +105,7 @@ class _MyHomePageState extends State<MyHomePage> {
 // Define your page widgets here:
 final List<Widget> _widgetOptions = <Widget>[
   HomePage(),
-  Text('Music', style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold)),
+ MusicPlayer(),
   Text('Search', style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold)),
   ProfileScreen(),
 ];
