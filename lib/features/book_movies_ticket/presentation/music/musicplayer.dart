@@ -4,6 +4,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:shimmer/shimmer.dart';
+import 'package:quickalert/quickalert.dart';
 
 
 class MusicPlayer extends StatefulWidget {
@@ -88,20 +89,48 @@ class _MusicPlayerState extends State<MusicPlayer> {
                       //     ),
                       //   ),
                       // ),
-                       ListTile(
-                         title: Text(snapshot.data[index]['title'], style: TextStyle(color: Colors.white),),
-                         subtitle: Text(snapshot.data[index]['artist'], style: TextStyle(color: Colors.white)),
-                         trailing: Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(25),
-                            color: Colors.white,
-                          ),
-                          child: Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Icon(Icons.play_arrow, color: Colors.black),
-                          )),
-                         autofocus: true,
-                         leading: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzONA5UEZBZfg73pA7bokhkyu2BP2Rmk_z7VTwHmaOY_B62DaC0FNDobAbVPB4DxXsFtE&usqp=CAU',fit: BoxFit.cover),
+                      
+                       InkWell(
+
+                        onDoubleTap: () {
+                          
+                          //! show toast msg added to favourite
+QuickAlert.show(
+          context: context,
+          type: QuickAlertType.success,
+          text: 'Music Added Successfully!',
+          autoCloseDuration: const Duration(seconds: 2),
+          showConfirmBtn: false,
+        );
+
+                          
+                        },
+                        onLongPress: () {
+                          QuickAlert.show(
+          context: context,
+          type: QuickAlertType.error,
+          title: 'Oops...',
+          text: 'Sorry, something went wrong',
+          backgroundColor: Colors.black,
+          titleColor: Colors.white,
+          textColor: Colors.white,
+        ); 
+                        },
+                         child: ListTile(
+                           title: Text(snapshot.data[index]['title'], style: TextStyle(color: Colors.white),),
+                           subtitle: Text(snapshot.data[index]['artist'], style: TextStyle(color: Colors.white)),
+                           trailing: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(25),
+                              color: Colors.white,
+                            ),
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Icon(Icons.play_arrow, color: Colors.black),
+                            )),
+                           autofocus: true,
+                           leading: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzONA5UEZBZfg73pA7bokhkyu2BP2Rmk_z7VTwHmaOY_B62DaC0FNDobAbVPB4DxXsFtE&usqp=CAU',fit: BoxFit.cover),
+                         ),
                        ),
                      ],
                    ),

@@ -62,6 +62,7 @@ dependencies:
 
   #Video Player
   youtube_player_flutter: ^8.1.2
+  quickalert: ^1.1.0
 
 dev_dependencies:
 
